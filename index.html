@@ -17,7 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>TEMPLATE</title>
+    <title>Bootstrap Dashboard</title>
   </head>
   <body>
     <header class="p-3">
@@ -26,7 +26,7 @@
           <img src="./img/logo.svg" class="img-fluid" />
         </div>
 
-        <div class="col-10">
+        <div class="col-4 col-md-6 col-lg-8 col-xl-10">
           <div class="input-group">
             <span class="input-group-text" id="basic-addon1">
               <i class="fa-solid fa-magnifying-glass"></i>
@@ -39,15 +39,27 @@
           </div>
         </div>
 
-        <div class="col-1">
-          <div class="dropdown">
+        <div class="col-4 col-md-3 col-lg-2 col-xl-1 d-flex deb">
+          <button type="button" class="btn">
+            <i class="fa-solid fa-list-ul"></i>
+          </button>
+
+          <button type="button" class="btn">
+            <i class="fa-solid fa-circle-question"></i>
+          </button>
+
+          <button type="button" class="btn">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </button>
+
+          <button type="button" class="btn">
             <a
               href="#"
-              class="d-block link-body-emphasis text-decoration-none"
+              class="link-body-emphasis text-decoration-none"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <!-- ICON -->
+              <i class="fa-solid fa-bell"></i>
             </a>
             <!-- <ul class="dropdown-menu text-small shadow">
               <li><a class="dropdown-item" href="#">New project...</a></li>
@@ -56,7 +68,7 @@
               <li><hr class="dropdown-divider" /></li>
               <li><a class="dropdown-item" href="#">Sign out</a></li>
             </ul> -->
-          </div>
+          </button>
         </div>
       </div>
     </header>
@@ -570,6 +582,7 @@
         </section>
       </div>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
