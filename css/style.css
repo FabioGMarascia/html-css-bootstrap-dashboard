@@ -1,9 +1,30 @@
 /********************* COMMON **********************/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+.deb {
+  border: 2px dashed blue;
 }
 /********************* HEADER **********************/
-/********************** MAIN ***********************/
+header {
+  height: 3rem;
+}
+/********************** NAV ***********************/
+.nav-container {
+  width: 8rem;
+}
+nav {
+  height: calc(100vh - 3rem);
+}
+
+ul {
+  list-style: none;
+}
+
+nav i {
+  width: 1rem;
+  color: white;
+}
+
+.main-container {
+  width: calc(100% - 8rem);
+}
 /********************* FOOTER **********************/
