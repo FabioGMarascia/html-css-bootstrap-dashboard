@@ -1,11 +1,19 @@
 /********************* COMMON **********************/
-
-.deb {
-  border: 2px dashed black;
+.my-w {
+  width: 2.2rem;
 }
+
+.my-bg {
+  background-color: #e9ecef;
+}
+
 /********************* HEADER **********************/
 header {
   height: 4.3rem;
+}
+
+.fa-bell {
+  color: #ff8f00;
 }
 /********************** NAV ***********************/
 .nav-container {
@@ -19,8 +27,8 @@ nav {
   height: 100%;
 }
 
-ul {
-  list-style: none;
+.nav-top li:hover {
+  background-color: rgba(255, 255, 255, 0.505);
 }
 
 nav i {
@@ -28,6 +36,11 @@ nav i {
   color: white;
 }
 
+ul {
+  list-style: none;
+}
+
+/********************* MAIN **********************/
 .main-container {
   width: calc(100% - 8rem);
   height: calc(100vh - 4.3rem);
@@ -38,6 +51,7 @@ nav i {
   background-color: #165bba;
 }
 
+/* TABLE */
 table img {
   width: 2rem;
 }
@@ -50,7 +64,13 @@ table i {
   opacity: 0.7;
 }
 
-.my-w {
-  width: 2.2rem;
+/********************* RESPONSIVE **********************/
+@media screen and (max-width: 767px) {
+  .nav-container {
+    width: 3.6rem;
+  }
+
+  .main-container {
+    width: calc(100% - 3.6rem);
+  }
 }
-/********************* FOOTER **********************/

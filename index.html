@@ -20,95 +20,110 @@
     <title>Bootstrap Dashboard</title>
   </head>
   <body>
-    <header class="p-3">
-      <div class="row align-items-center m-0">
-        <div class="col-4 col-md-3 col-lg-2 col-xl-1">
-          <img src="./img/logo.svg" class="img-fluid" />
+    <header>
+      <div class="row align-items-center h-100 m-0">
+        <div class="col-1 col-md-2 col-xxl-1 p-0">
+          <img
+            src="./img/logo.svg"
+            class="img-fluid w-100 d-none d-md-block ps-2"
+          />
+          <img src="./img/mobile-logo.png" class="img-fluid d-md-none" />
         </div>
 
-        <div class="col-4 col-md-6 col-lg-8 col-xl-10">
+        <div class="col-10 col-md-8 col-xxl-10 px-0 px-md-2">
           <div class="input-group">
-            <span class="input-group-text" id="basic-addon1">
+            <span class="input-group-text my-bg" id="basic-addon1">
               <i class="fa-solid fa-magnifying-glass"></i>
             </span>
             <input
               type="text"
-              class="form-control border-start-0 ps-0"
+              class="form-control border-start-0 ps-0 my-bg"
               placeholder="Prova a cercare : Lezioni di Laravel"
             />
           </div>
         </div>
 
-        <div class="col-4 col-md-3 col-lg-2 col-xl-1 d-flex deb">
-          <button type="button" class="btn">
+        <div
+          class="col-1 col-md-2 col-xxl-1 p-0 d-flex justify-content-between"
+        >
+          <button type="button" class="btn p-2 d-none d-md-block">
             <i class="fa-solid fa-list-ul"></i>
           </button>
 
-          <button type="button" class="btn">
+          <button type="button" class="btn p-2 d-none d-md-block">
             <i class="fa-solid fa-circle-question"></i>
           </button>
 
-          <button type="button" class="btn">
+          <button type="button" class="btn p-2 d-none d-md-block">
             <i class="fa-solid fa-ellipsis-vertical"></i>
           </button>
 
-          <button type="button" class="btn">
-            <a
-              href="#"
-              class="link-body-emphasis text-decoration-none"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i class="fa-solid fa-bell"></i>
-            </a>
-            <!-- <ul class="dropdown-menu text-small shadow">
-              <li><a class="dropdown-item" href="#">New project...</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul> -->
+          <button
+            class="btn dropdown m-auto m-md-0"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bell"></i>
           </button>
+
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
         </div>
       </div>
     </header>
 
     <div class="big-container row m-0">
       <div class="nav-container p-0">
-        <nav class="row m-0 py-4 px-1">
+        <nav class="row m-0 py-3 px-1">
           <div class="nav-top col-12">
             <ul class="p-0">
-              <li class="mb-3">
-                <i class="fa-solid fa-house me-2"></i>
-                <a href="#" class="nav-link text-white d-inline"> Home </a>
+              <li class="mb-2 p-1">
+                <a href="#" class="nav-link text-white">
+                  <i class="fa-solid fa-house me-2"></i>
+                  <span class="d-none d-md-inline">Home</span>
+                </a>
               </li>
 
-              <li class="mb-3">
-                <i class="fa-solid fa-chart-simple me-2"></i>
-                <a href="#" class="nav-link text-white d-inline"> Stats </a>
+              <li class="mb-2 p-1">
+                <a href="#" class="nav-link text-white">
+                  <i class="fa-solid fa-chart-simple me-2"></i>
+                  <span class="d-none d-md-inline">Stats</span>
+                </a>
               </li>
 
-              <li class="mb-3">
-                <i class="fa-solid fa-signal me-2"></i>
-                <a href="#" class="nav-link text-white d-inline"> Signals </a>
+              <li class="mb-2 p-1">
+                <a href="#" class="nav-link text-white">
+                  <i class="fa-solid fa-signal me-2"></i>
+                  <span class="d-none d-md-inline">Signals</span>
+                </a>
               </li>
             </ul>
           </div>
 
           <div class="nav-bottom col-12 d-flex align-items-end">
             <div>
-              <i class="fa-solid fa-gear me-2"></i>
-              <a href="#" class="nav-link text-white d-inline"> Admin </a>
+              <a href="#" class="nav-link text-white">
+                <i class="fa-solid fa-gear me-2 ms-1"></i>
+                <span class="d-none d-md-inline">Admin</span>
+              </a>
             </div>
           </div>
         </nav>
       </div>
 
       <div class="main-container container-fluid">
-        <section class="main-top row p-3 bg-primary">
-          <div class="col-8">
-            <div class="row">
-              <div class="col-9 p-0">
+        <section
+          class="main-top row gy-3 flex-column-reverse flex-sm-row p-3 bg-primary"
+        >
+          <div class="col-12 col-sm-8">
+            <div class="row gy-4">
+              <div class="col-12 col-sm-6 col-md-7 col-lg-8 col-xl-9 p-0">
                 <div>
                   <span class="h2 text-white">Boolean</span>
                   <span class="badge rounded-pill">Piano blaze</span>
@@ -118,400 +133,586 @@
                   <span class="badge rounded-pill">3 app</span>
 
                   <i class="fa-solid fa-angles-right text-white"></i>
-                  <span class="badge rounded-pill">Boolean mobile app</span>
 
-                  <span class="badge rounded-pill">Boolean web app</span>
+                  <span class="badge rounded-circle d-lg-none">
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
 
-                  <span class="badge rounded-pill">Boolean blog app</span>
+                  <span class="d-none d-lg-inline">
+                    <span class="badge rounded-pill">Boolean mobile app</span>
+
+                    <span class="badge rounded-pill">Boolean web app</span>
+
+                    <span class="badge rounded-pill">Boolean blog app</span>
+                  </span>
                 </div>
               </div>
 
-              <div class="col-3 text-white p-0">
+              <div
+                class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 text-white p-0"
+              >
                 <span>Studenti online negli ultimi 30 minuti</span>
                 <div class="text-white h2">125</div>
               </div>
             </div>
           </div>
 
-          <div class="col-3 px-0 d-flex justify-content-end">
+          <div
+            class="col-12 col-sm-4 col-md-3 px-0 d-flex justify-content-sm-end align-items-start"
+          >
             <div class="d-flex align-items-center">
               <span class="text-white">Nuovo studente</span>
-              <i
-                class="fa-regular fa-square-plus text-white display-6 ms-3"
-              ></i>
+
+              <button
+                class="btn btn-primary p-2"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              >
+                <i class="fa-regular fa-square-plus text-white display-5"></i>
+              </button>
+
+              <div
+                class="offcanvas offcanvas-end w-50"
+                tabindex="-1"
+                id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                    Inserisci un nuovo studente
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+
+                <div class="offcanvas-body">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="cognome" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <label for="email" class="form-label">Email</label>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text my-bg" id="basic-addon1">
+                          @
+                        </span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="email"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="password" class="form-label"
+                          >Password</label
+                        >
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <label for="email" class="form-label"
+                        >Indirizzo Email</label
+                      >
+                      <div class="input-group mb-3">
+                        <span class="input-group-text my-bg" id="basic-addon1">
+                          @
+                        </span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="email"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="password" class="form-label"
+                          >Password</label
+                        >
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="indirizzo" class="form-label"
+                          >Indirizzo</label
+                        >
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="città" class="form-label">Città</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-4">
+                      <label for="stato" class="form-label">Stato</label>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Scegli...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+
+                    <div class="col-2">
+                      <div class="mb-3">
+                        <label for="cap" class="form-label">CAP</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="foto" class="form-label">Foto</label>
+                        <div class="input-group mb-3">
+                          <input
+                            type="file"
+                            class="form-control"
+                            id="inputGroupFile01"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="my-3">
+                      <input class="form-check-input" type="checkbox" />
+                      <span>Seleziona per proseguire</span>
+                    </div>
+
+                    <div>
+                      <button type="button" class="btn btn-primary">
+                        Salva
+                      </button>
+                      <button type="button" class="btn btn-warning">
+                        Svuota
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="main-bottom row p-3">
-          <div class="col-8 ps-0">
-            <div class="row g-3 ps-1">
-              <div class="card col-12">
-                <div class="card-header h3">Prossime classi</div>
-                <div class="card-body">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col" class="col-8 col-md-6 col-lg-4">
-                          Nome
-                        </th>
-                        <th scope="col" class="text-center">Data inizio</th>
-                        <th scope="col" class="text-center">ROI</th>
-                        <th scope="col" class="text-center">Stato</th>
-                        <th scope="col" class="text-center">Azioni</th>
-                      </tr>
-                    </thead>
-
-                    <tbody>
-                      <tr>
-                        <th scope="row">
-                          <img src="./img/class-avatar.jpg" />
-                          <span>Classe 75</span>
-                        </th>
-                        <td>
-                          <span>15 Feb 2021</span>
-                        </td>
-                        <td>
-                          <span>20%</span>
-                        </td>
-                        <td>
-                          <span class="badge text-bg-success">Done</span>
-                        </td>
-                        <td>
-                          <button type="button" class="btn p-0">
-                            <i
-                              class="fa-solid fa-pencil border border-2 rounded p-2"
-                            >
-                            </i>
-                          </button>
-
-                          <button type="button" class="btn p-0">
-                            <i
-                              class="fa-solid fa-trash my-w border border-2 rounded p-2"
-                            ></i>
-                          </button>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <th scope="row">
-                          <img src="./img/class-avatar.jpg" />
-                          <span>Classe 76</span>
-                        </th>
-                        <td>
-                          <span>16 Feb 2021</span>
-                        </td>
-                        <td>
-                          <span>20%</span>
-                        </td>
-                        <td>
-                          <span class="badge text-bg-success">Done</span>
-                        </td>
-                        <td>
-                          <button type="button" class="btn p-0">
-                            <i
-                              class="fa-solid fa-pencil border border-2 rounded p-2"
-                            >
-                            </i>
-                          </button>
-
-                          <button type="button" class="btn p-0">
-                            <i
-                              class="fa-solid fa-trash my-w border border-2 rounded p-2"
-                            ></i>
-                          </button>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <th scope="row">
-                          <img src="./img/class-avatar.jpg" />
-                          <span>Classe 77</span>
-                        </th>
-                        <td>
-                          <span>17 Feb 2021</span>
-                        </td>
-                        <td>
-                          <span>20%</span>
-                        </td>
-                        <td>
-                          <span class="badge text-bg-warning text-white"
-                            >process</span
+        <section class="main-bottom row g-4 py-4">
+          <div class="col-12 col-lg-8">
+            <div class="row g-4">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header h3">Prossime classi</div>
+                  <div class="card-body">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th
+                            scope="col"
+                            class="col-5 col-sm-4 col-xl-6 col-xxl-7"
                           >
-                        </td>
-                        <td>
-                          <button type="button" class="btn p-0">
-                            <i
-                              class="fa-solid fa-pencil border border-2 rounded p-2"
+                            Nome
+                          </th>
+                          <th
+                            scope="col"
+                            class="text-center d-none d-sm-table-cell"
+                          >
+                            Data inizio
+                          </th>
+                          <th
+                            scope="col"
+                            class="text-center d-none d-sm-table-cell"
+                          >
+                            ROI
+                          </th>
+                          <th scope="col" class="text-center">Stato</th>
+                          <th scope="col" class="text-center">Azioni</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            <img src="./img/class-avatar.jpg" />
+                            <span>Classe 75</span>
+                          </th>
+                          <td class="d-none d-sm-table-cell">
+                            <span>15 Feb 2021</span>
+                          </td>
+                          <td class="d-none d-sm-table-cell">
+                            <span>20%</span>
+                          </td>
+                          <td>
+                            <span class="badge text-bg-success">Done</span>
+                          </td>
+                          <td>
+                            <button type="button" class="btn p-0">
+                              <i
+                                class="fa-solid fa-pencil border border-2 rounded p-2"
+                              >
+                              </i>
+                            </button>
+
+                            <button type="button" class="btn p-0">
+                              <i
+                                class="fa-solid fa-trash my-w border border-2 rounded p-2"
+                              ></i>
+                            </button>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">
+                            <img src="./img/class-avatar.jpg" />
+                            <span>Classe 76</span>
+                          </th>
+                          <td class="d-none d-sm-table-cell">
+                            <span>16 Feb 2021</span>
+                          </td>
+                          <td class="d-none d-sm-table-cell">
+                            <span>20%</span>
+                          </td>
+                          <td>
+                            <span class="badge text-bg-success">Done</span>
+                          </td>
+                          <td>
+                            <button type="button" class="btn p-0">
+                              <i
+                                class="fa-solid fa-pencil border border-2 rounded p-2"
+                              >
+                              </i>
+                            </button>
+
+                            <button type="button" class="btn p-0">
+                              <i
+                                class="fa-solid fa-trash my-w border border-2 rounded p-2"
+                              ></i>
+                            </button>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">
+                            <img src="./img/class-avatar.jpg" />
+                            <span>Classe 77</span>
+                          </th>
+                          <td class="d-none d-sm-table-cell">
+                            <span>17 Feb 2021</span>
+                          </td>
+                          <td class="d-none d-sm-table-cell">
+                            <span>20%</span>
+                          </td>
+                          <td>
+                            <span class="badge text-bg-warning text-white"
+                              >process</span
                             >
-                            </i>
-                          </button>
+                          </td>
+                          <td>
+                            <button type="button" class="btn p-0">
+                              <i
+                                class="fa-solid fa-pencil border border-2 rounded p-2"
+                              >
+                              </i>
+                            </button>
 
-                          <button type="button" class="btn p-0">
-                            <i
-                              class="fa-solid fa-trash my-w border border-2 rounded p-2"
-                            ></i>
-                          </button>
-                        </td>
-                      </tr>
+                            <button type="button" class="btn p-0">
+                              <i
+                                class="fa-solid fa-trash my-w border border-2 rounded p-2"
+                              ></i>
+                            </button>
+                          </td>
+                        </tr>
 
-                      <tr>
-                        <th scope="row">
-                          <img src="./img/class-avatar.jpg" />
-                          <span>Classe 78</span>
-                        </th>
-                        <td>
-                          <span>18 Feb 2021</span>
-                        </td>
-                        <td>
-                          <span>20%</span>
-                        </td>
-                        <td>
-                          <span class="badge text-bg-success">Done</span>
-                        </td>
-                        <td>
-                          <button type="button" class="btn p-0">
-                            <i
-                              class="fa-solid fa-pencil border border-2 rounded p-2"
-                            >
-                            </i>
-                          </button>
+                        <tr>
+                          <th scope="row">
+                            <img src="./img/class-avatar.jpg" />
+                            <span>Classe 78</span>
+                          </th>
+                          <td class="d-none d-sm-table-cell">
+                            <span>18 Feb 2021</span>
+                          </td>
+                          <td class="d-none d-sm-table-cell">
+                            <span>20%</span>
+                          </td>
+                          <td>
+                            <span class="badge text-bg-success">Done</span>
+                          </td>
+                          <td>
+                            <button type="button" class="btn p-0">
+                              <i
+                                class="fa-solid fa-pencil border border-2 rounded p-2"
+                              >
+                              </i>
+                            </button>
 
-                          <button type="button" class="btn p-0">
-                            <i
-                              class="fa-solid fa-trash my-w border border-2 rounded p-2"
-                            ></i>
-                          </button>
-                        </td>
-                      </tr>
+                            <button type="button" class="btn p-0">
+                              <i
+                                class="fa-solid fa-trash my-w border border-2 rounded p-2"
+                              ></i>
+                            </button>
+                          </td>
+                        </tr>
 
-                      <tr>
-                        <th scope="row">
-                          <img src="./img/class-avatar.jpg" />
-                          <span>Classe 79</span>
-                        </th>
-                        <td>
-                          <span>19 Feb 2021</span>
-                        </td>
-                        <td>
-                          <span>20%</span>
-                        </td>
-                        <td>
-                          <span class="badge text-bg-danger">failed</span>
-                        </td>
-                        <td>
-                          <button type="button" class="btn p-0">
-                            <i
-                              class="fa-solid fa-pencil border border-2 rounded p-2"
-                            >
-                            </i>
-                          </button>
+                        <tr>
+                          <th scope="row">
+                            <img src="./img/class-avatar.jpg" />
+                            <span>Classe 79</span>
+                          </th>
+                          <td class="d-none d-sm-table-cell">
+                            <span>19 Feb 2021</span>
+                          </td>
+                          <td class="d-none d-sm-table-cell">
+                            <span>20%</span>
+                          </td>
+                          <td>
+                            <span class="badge text-bg-danger">failed</span>
+                          </td>
+                          <td>
+                            <button type="button" class="btn p-0">
+                              <i
+                                class="fa-solid fa-pencil border border-2 rounded p-2"
+                              >
+                              </i>
+                            </button>
 
-                          <button type="button" class="btn p-0">
-                            <i
-                              class="fa-solid fa-trash my-w border border-2 rounded p-2"
-                            ></i>
-                          </button>
-                        </td>
-                      </tr>
+                            <button type="button" class="btn p-0">
+                              <i
+                                class="fa-solid fa-trash my-w border border-2 rounded p-2"
+                              ></i>
+                            </button>
+                          </td>
+                        </tr>
 
-                      <tr>
-                        <th scope="row">
-                          <img src="./img/class-avatar.jpg" />
-                          <span>Classe 80</span>
-                        </th>
-                        <td>
-                          <span>20 Feb 2021</span>
-                        </td>
-                        <td>
-                          <span>20%</span>
-                        </td>
-                        <td>
-                          <span class="badge text-bg-success">Done</span>
-                        </td>
-                        <td>
-                          <button type="button" class="btn p-0">
-                            <i
-                              class="fa-solid fa-pencil border border-2 rounded p-2"
-                            >
-                            </i>
-                          </button>
+                        <tr>
+                          <th scope="row">
+                            <img src="./img/class-avatar.jpg" />
+                            <span>Classe 80</span>
+                          </th>
+                          <td class="d-none d-sm-table-cell">
+                            <span>20 Feb 2021</span>
+                          </td>
+                          <td class="d-none d-sm-table-cell">
+                            <span>20%</span>
+                          </td>
+                          <td>
+                            <span class="badge text-bg-success">Done</span>
+                          </td>
+                          <td>
+                            <button type="button" class="btn p-0">
+                              <i
+                                class="fa-solid fa-pencil border border-2 rounded p-2"
+                              >
+                              </i>
+                            </button>
 
-                          <button type="button" class="btn p-0">
-                            <i
-                              class="fa-solid fa-trash my-w border border-2 rounded p-2"
-                            ></i>
-                          </button>
-                        </td>
-                      </tr>
+                            <button type="button" class="btn p-0">
+                              <i
+                                class="fa-solid fa-trash my-w border border-2 rounded p-2"
+                              ></i>
+                            </button>
+                          </td>
+                        </tr>
 
-                      <tr>
-                        <th scope="row">
-                          <img src="./img/class-avatar.jpg" />
-                          <span>Classe 81</span>
-                        </th>
-                        <td>
-                          <span>21 Feb 2021</span>
-                        </td>
-                        <td>
-                          <span>20%</span>
-                        </td>
-                        <td>
-                          <span class="badge text-bg-danger">failed</span>
-                        </td>
-                        <td>
-                          <button type="button" class="btn p-0">
-                            <i
-                              class="fa-solid fa-pencil border border-2 rounded p-2"
-                            >
-                            </i>
-                          </button>
+                        <tr>
+                          <th scope="row">
+                            <img src="./img/class-avatar.jpg" />
+                            <span>Classe 81</span>
+                          </th>
+                          <td class="d-none d-sm-table-cell">
+                            <span>21 Feb 2021</span>
+                          </td>
+                          <td class="d-none d-sm-table-cell">
+                            <span>20%</span>
+                          </td>
+                          <td>
+                            <span class="badge text-bg-danger">failed</span>
+                          </td>
+                          <td>
+                            <button type="button" class="btn p-0">
+                              <i
+                                class="fa-solid fa-pencil border border-2 rounded p-2"
+                              >
+                              </i>
+                            </button>
 
-                          <button type="button" class="btn p-0">
-                            <i
-                              class="fa-solid fa-trash my-w border border-2 rounded p-2"
-                            ></i>
-                          </button>
-                        </td>
-                      </tr>
+                            <button type="button" class="btn p-0">
+                              <i
+                                class="fa-solid fa-trash my-w border border-2 rounded p-2"
+                              ></i>
+                            </button>
+                          </td>
+                        </tr>
 
-                      <tr>
-                        <th scope="row">
-                          <img src="./img/class-avatar.jpg" />
-                          <span>Classe 82</span>
-                        </th>
-                        <td>
-                          <span>22 Feb 2021</span>
-                        </td>
-                        <td>
-                          <span>20%</span>
-                        </td>
-                        <td>
-                          <span class="badge text-bg-success">Done</span>
-                        </td>
-                        <td>
-                          <button type="button" class="btn p-0">
-                            <i
-                              class="fa-solid fa-pencil border border-2 rounded p-2"
-                            >
-                            </i>
-                          </button>
+                        <tr>
+                          <th scope="row">
+                            <img src="./img/class-avatar.jpg" />
+                            <span>Classe 82</span>
+                          </th>
+                          <td class="d-none d-sm-table-cell">
+                            <span>22 Feb 2021</span>
+                          </td>
+                          <td class="d-none d-sm-table-cell">
+                            <span>20%</span>
+                          </td>
+                          <td>
+                            <span class="badge text-bg-success">Done</span>
+                          </td>
+                          <td>
+                            <button type="button" class="btn p-0">
+                              <i
+                                class="fa-solid fa-pencil border border-2 rounded p-2"
+                              >
+                              </i>
+                            </button>
 
-                          <button type="button" class="btn p-0">
-                            <i
-                              class="fa-solid fa-trash my-w border border-2 rounded p-2"
-                            ></i>
-                          </button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                            <button type="button" class="btn p-0">
+                              <i
+                                class="fa-solid fa-trash my-w border border-2 rounded p-2"
+                              ></i>
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
-
-              <div class="card col-12">
-                <div class="card-header h3">F.A.Q.</div>
-                <div>
-                  <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseOne"
-                          aria-expanded="true"
-                          aria-controls="collapseOne"
-                        >
-                          Come aggiungere un nuovo studente?
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseOne"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body">
-                          <strong
-                            >This is the first item's accordion body.</strong
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header h3">F.A.Q.</div>
+                  <div>
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
                           >
-                          It is shown by default, until the collapse plugin adds
-                          the appropriate classes that we use to style each
-                          element. These classes control the overall appearance,
-                          as well as the showing and hiding via CSS transitions.
-                          You can modify any of this with custom CSS or
-                          overriding our default variables. It's also worth
-                          noting that just about any HTML can go within the
-                          <code>.accordion-body</code>, though the transition
-                          does limit overflow.
+                            Come aggiungere un nuovo studente?
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseOne"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <strong
+                              >This is the first item's accordion body.</strong
+                            >
+                            It is shown by default, until the collapse plugin
+                            adds the appropriate classes that we use to style
+                            each element. These classes control the overall
+                            appearance, as well as the showing and hiding via
+                            CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's
+                            also worth noting that just about any HTML can go
+                            within the
+                            <code>.accordion-body</code>, though the transition
+                            does limit overflow.
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseTwo"
-                          aria-expanded="false"
-                          aria-controls="collapseTwo"
-                        >
-                          Come posso accedere alle informazioni del mio account?
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseTwo"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body">
-                          <strong
-                            >This is the second item's accordion body.</strong
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
                           >
-                          It is hidden by default, until the collapse plugin
-                          adds the appropriate classes that we use to style each
-                          element. These classes control the overall appearance,
-                          as well as the showing and hiding via CSS transitions.
-                          You can modify any of this with custom CSS or
-                          overriding our default variables. It's also worth
-                          noting that just about any HTML can go within the
-                          <code>.accordion-body</code>, though the transition
-                          does limit overflow.
+                            Come posso accedere alle informazioni del mio
+                            account?
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseTwo"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <strong
+                              >This is the second item's accordion body.</strong
+                            >
+                            It is hidden by default, until the collapse plugin
+                            adds the appropriate classes that we use to style
+                            each element. These classes control the overall
+                            appearance, as well as the showing and hiding via
+                            CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's
+                            also worth noting that just about any HTML can go
+                            within the
+                            <code>.accordion-body</code>, though the transition
+                            does limit overflow.
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseThree"
-                          aria-expanded="false"
-                          aria-controls="collapseThree"
-                        >
-                          Posso usare questa dashboard da mobile?
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseThree"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body">
-                          <strong
-                            >This is the third item's accordion body.</strong
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                            aria-expanded="false"
+                            aria-controls="collapseThree"
                           >
-                          It is hidden by default, until the collapse plugin
-                          adds the appropriate classes that we use to style each
-                          element. These classes control the overall appearance,
-                          as well as the showing and hiding via CSS transitions.
-                          You can modify any of this with custom CSS or
-                          overriding our default variables. It's also worth
-                          noting that just about any HTML can go within the
-                          <code>.accordion-body</code>, though the transition
-                          does limit overflow.
+                            Posso usare questa dashboard da mobile?
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseThree"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <strong
+                              >This is the third item's accordion body.</strong
+                            >
+                            It is hidden by default, until the collapse plugin
+                            adds the appropriate classes that we use to style
+                            each element. These classes control the overall
+                            appearance, as well as the showing and hiding via
+                            CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's
+                            also worth noting that just about any HTML can go
+                            within the
+                            <code>.accordion-body</code>, though the transition
+                            does limit overflow.
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -521,8 +722,8 @@
             </div>
           </div>
 
-          <div class="col-4 pe-0">
-            <div class="row g-3">
+          <div class="col-12 col-lg-4">
+            <div class="row g-4">
               <div class="col-12">
                 <div class="card">
                   <div class="card-header h3">Todo</div>
