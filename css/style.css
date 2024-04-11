@@ -39,7 +39,6 @@ nav i {
 ul {
   list-style: none;
 }
-
 /********************* MAIN **********************/
 .main-container {
   width: calc(100% - 8rem);
@@ -72,5 +71,9 @@ table i {
 
   .main-container {
     width: calc(100% - 3.6rem);
+  }
+
+  .my-w-2 {
+    width: 100% !important;
   }
 }
