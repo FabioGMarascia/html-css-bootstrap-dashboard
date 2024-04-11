@@ -3,6 +3,10 @@
   width: 2.2rem;
 }
 
+.my-w-2 {
+  width: 40%;
+}
+
 .my-bg {
   background-color: #e9ecef;
 }
@@ -15,6 +19,7 @@ header {
 .fa-bell {
   color: #ff8f00;
 }
+
 /********************** NAV ***********************/
 .nav-container {
   width: 8rem;
@@ -33,7 +38,6 @@ nav {
 
 nav i {
   width: 1rem;
-  color: white;
 }
 
 ul {
@@ -72,5 +76,8 @@ table i {
 
   .main-container {
     width: calc(100% - 3.6rem);
+  }
+
+  .w-50 {
   }
 }
